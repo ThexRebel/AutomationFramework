@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\mozam\AppData\Local\Temp\testng-eclipse--1762607573\testng-customsuite.xml</span>
+                    <span>C:\Users\mozam\AppData\Local\Temp\testng-eclipse--1071091942\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Mozammil.Automation.App" class="method navigator-link" hash-for-method="getName">getName</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Mozammil.Automation.test" class="method navigator-link" hash-for-method="Testcase1">Testcase1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Mozammil.Automation.test" class="method navigator-link" hash-for-method="Testcase2">Testcase2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Mozammil.Automation.test2" class="method navigator-link" hash-for-method="Testcase3">Testcase3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,14 +132,36 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Mozammil.Automation.App</span>
+              <span class="class-name">Mozammil.Automation.test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getName">
-                  </a> <!-- getName -->
-                  <span class="method-name">getName</span>
+                  <a name="Testcase1">
+                  </a> <!-- Testcase1 -->
+                  <span class="method-name">Testcase1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Testcase2">
+                  </a> <!-- Testcase2 -->
+                  <span class="method-name">Testcase2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Mozammil.Automation.test2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Testcase3">
+                  </a> <!-- Testcase3 -->
+                  <span class="method-name">Testcase3</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +169,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\mozam\AppData\Local\Temp\testng-eclipse--1762607573\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\mozam\AppData\Local\Temp\testng-eclipse--1071091942\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,7 +178,13 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Mozammil.Automation.App&quot;/&gt;
+      &lt;class name=&quot;webDriver.CreateDriver&quot;/&gt;
+      &lt;class name=&quot;Mozammil.Automation.test&quot;/&gt;
+      &lt;class name=&quot;reporting.Logger&quot;/&gt;
+      &lt;class name=&quot;reporting.Status&quot;/&gt;
+      &lt;class name=&quot;reporting.ExtentFactory&quot;/&gt;
+      &lt;class name=&quot;Mozammil.Automation.GeneralComponents.GeneralComponents&quot;/&gt;
+      &lt;class name=&quot;Mozammil.Automation.test2&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -160,7 +198,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Default test (7 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,16 +224,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getName')
-data.setCell(0, 2, 'Mozammil.Automation.App')
-data.setCell(0, 3, 7);
+data.setCell(0, 1, 'Testcase1')
+data.setCell(0, 2, 'Mozammil.Automation.test')
+data.setCell(0, 3, 8048);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Testcase2')
+data.setCell(1, 2, 'Mozammil.Automation.test')
+data.setCell(1, 3, 5350);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Testcase3')
+data.setCell(2, 2, 'Mozammil.Automation.test2')
+data.setCell(2, 3, 4792);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 ms</span>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -221,11 +267,50 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Mozammil.Automation.App</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">getName</span>
+              <div class="chronological-class-name">webDriver.CreateDriver</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">createWebDriver</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">reporting.Logger</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">startLogger</span>
+                <span class="method-start">8644 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Mozammil.Automation.test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Testcase1</span>
+                <span class="method-start">8987 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Testcase2</span>
+                <span class="method-start">17046 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Mozammil.Automation.test2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Testcase3</span>
+                <span class="method-start">22400 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">reporting.Logger</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">27195 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">webDriver.CreateDriver</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">close</span>
+                <span class="method-start">28263 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

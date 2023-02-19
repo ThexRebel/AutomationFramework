@@ -1,17 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-18T15:47:09 IST" name="Default suite" finished-at="2023-02-18T15:47:09 IST" duration-ms="37">
+  <suite started-at="2023-02-19T14:07:15 IST" name="Default suite" finished-at="2023-02-19T14:07:35 IST" duration-ms="19547">
     <groups>
     </groups>
-    <test started-at="2023-02-18T15:47:09 IST" name="Default test" finished-at="2023-02-18T15:47:09 IST" duration-ms="37">
-      <class name="Mozammil.Automation.App">
-        <test-method signature="getName()[pri:0, instance:Mozammil.Automation.App@69e1dd28]" started-at="2023-02-18T15:47:09 IST" name="getName" finished-at="2023-02-18T15:47:09 IST" duration-ms="7" status="PASS">
+    <test started-at="2023-02-19T14:07:15 IST" name="Default test" finished-at="2023-02-19T14:07:35 IST" duration-ms="19547">
+      <class name="webDriver.CreateDriver">
+        <test-method is-config="true" signature="createWebDriver()[pri:0, instance:webDriver.CreateDriver@47987356]" started-at="2023-02-19T14:07:06 IST" name="createWebDriver" finished-at="2023-02-19T14:07:15 IST" duration-ms="8639" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getName -->
-      </class> <!-- Mozammil.Automation.App -->
+        </test-method> <!-- createWebDriver -->
+        <test-method is-config="true" signature="close()[pri:0, instance:webDriver.CreateDriver@47987356]" started-at="2023-02-19T14:07:35 IST" name="close" finished-at="2023-02-19T14:07:36 IST" duration-ms="1039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- webDriver.CreateDriver -->
+      <class name="Mozammil.Automation.test">
+        <test-method signature="Testcase1()[pri:1, instance:Mozammil.Automation.test@6283d8b8]" started-at="2023-02-19T14:07:15 IST" name="Testcase1" finished-at="2023-02-19T14:07:23 IST" duration-ms="8048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testcase1 -->
+        <test-method signature="Testcase2()[pri:2, instance:Mozammil.Automation.test@6283d8b8]" started-at="2023-02-19T14:07:23 IST" name="Testcase2" finished-at="2023-02-19T14:07:29 IST" duration-ms="5350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testcase2 -->
+      </class> <!-- Mozammil.Automation.test -->
+      <class name="reporting.Logger">
+        <test-method is-config="true" signature="startLogger()[pri:0, instance:reporting.Logger@22ef9844]" started-at="2023-02-19T14:07:15 IST" name="startLogger" finished-at="2023-02-19T14:07:15 IST" duration-ms="290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startLogger -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:reporting.Logger@22ef9844]" started-at="2023-02-19T14:07:34 IST" name="endTest" finished-at="2023-02-19T14:07:35 IST" duration-ms="993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- reporting.Logger -->
+      <class name="Mozammil.Automation.test2">
+        <test-method signature="Testcase3()[pri:1, instance:Mozammil.Automation.test2@3b6ddd1d]" started-at="2023-02-19T14:07:29 IST" name="Testcase3" finished-at="2023-02-19T14:07:34 IST" duration-ms="4792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testcase3 -->
+      </class> <!-- Mozammil.Automation.test2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
