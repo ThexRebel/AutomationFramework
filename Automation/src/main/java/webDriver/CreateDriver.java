@@ -5,6 +5,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
@@ -13,7 +15,7 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class CreateDriver {
-	static String browser="chrome";
+	static String browser="edge";
 	public static WebDriver driver;
 	public static WebDriver Init() {
 		return driver;
@@ -36,6 +38,23 @@ public class CreateDriver {
 		if(browser.equalsIgnoreCase("chrome")){
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(30));
+			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
+			driver.manage().window().maximize();
+		}
+		
+		else if(browser.equalsIgnoreCase("firefox")){
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(30));
+			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
+			driver.manage().window().maximize();
+		}
+		else if(browser.equalsIgnoreCase("edge")){
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(30));
 			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));

@@ -15,6 +15,10 @@ GeneralComponents gc = new GeneralComponents();
 	@Test(priority = 1)
 	public void Testcase3() {
 		Logger.startLogForTestCase("Testcase3");
+		extra();
+	}
+	
+	public void extra() {
 		gc.open("http://www.google.com");
 		Logger.info(LogStatus.PASS, "Google opened");
 		CreateDriver.Init().findElement(By.className("gLFyf")).sendKeys("Selenium");
