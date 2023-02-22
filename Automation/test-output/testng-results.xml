@@ -1,49 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-19T15:53:53 IST" name="Sample Suite" finished-at="2023-02-19T15:54:13 IST" duration-ms="19781">
+  <suite started-at="2023-02-22T23:42:38 IST" name="Default suite" finished-at="2023-02-22T23:42:40 IST" duration-ms="2707">
     <groups>
     </groups>
-    <test started-at="2023-02-19T15:53:53 IST" name="Pre-requisites" finished-at="2023-02-19T15:53:55 IST" duration-ms="1466">
-      <class name="reporting.Logger">
-        <test-method is-config="true" signature="startLogger()[pri:0, instance:reporting.Logger@932bc4a]" started-at="2023-02-19T15:53:53 IST" name="startLogger" finished-at="2023-02-19T15:53:54 IST" duration-ms="424" status="PASS">
+    <test started-at="2023-02-22T23:42:38 IST" name="Default test" finished-at="2023-02-22T23:42:40 IST" duration-ms="2707">
+      <class name="apiAutomation.APIServices">
+        <test-method signature="restAPI()[pri:0, instance:apiAutomation.APIServices@24fcf36f]" started-at="2023-02-22T23:42:38 IST" name="restAPI" finished-at="2023-02-22T23:42:40 IST" duration-ms="2678" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startLogger -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:reporting.Logger@932bc4a]" started-at="2023-02-19T15:53:54 IST" name="endTest" finished-at="2023-02-19T15:53:55 IST" duration-ms="1018" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTest -->
-      </class> <!-- reporting.Logger -->
-    </test> <!-- Pre-requisites -->
-    <test started-at="2023-02-19T15:53:55 IST" name="Testing" finished-at="2023-02-19T15:54:13 IST" duration-ms="18268">
-      <class name="webDriver.CreateDriver">
-        <test-method is-config="true" signature="createWebDriver()[pri:0, instance:webDriver.CreateDriver@6bedbc4d]" started-at="2023-02-19T15:53:45 IST" name="createWebDriver" finished-at="2023-02-19T15:53:53 IST" duration-ms="8226" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createWebDriver -->
-        <test-method is-config="true" signature="close()[pri:0, instance:webDriver.CreateDriver@6bedbc4d]" started-at="2023-02-19T15:54:13 IST" name="close" finished-at="2023-02-19T15:54:14 IST" duration-ms="1091" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- webDriver.CreateDriver -->
-      <class name="Mozammil.Automation.test">
-        <test-method signature="Testcase1()[pri:1, instance:Mozammil.Automation.test@5d7148e2]" started-at="2023-02-19T15:53:55 IST" name="Testcase1" finished-at="2023-02-19T15:54:02 IST" duration-ms="7453" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Testcase1 -->
-        <test-method signature="Testcase2()[pri:2, instance:Mozammil.Automation.test@5d7148e2]" started-at="2023-02-19T15:54:02 IST" name="Testcase2" finished-at="2023-02-19T15:54:08 IST" duration-ms="5665" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Testcase2 -->
-      </class> <!-- Mozammil.Automation.test -->
-      <class name="Mozammil.Automation.test2">
-        <test-method signature="Testcase3()[pri:1, instance:Mozammil.Automation.test2@25fb8912]" started-at="2023-02-19T15:54:08 IST" name="Testcase3" finished-at="2023-02-19T15:54:13 IST" duration-ms="5043" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Testcase3 -->
-      </class> <!-- Mozammil.Automation.test2 -->
-    </test> <!-- Testing -->
-  </suite> <!-- Sample Suite -->
+        </test-method> <!-- restAPI -->
+      </class> <!-- apiAutomation.APIServices -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
