@@ -8,9 +8,16 @@ import org.testng.annotations.Test;
 import webDriver.CreateDriver;
 
 public class GeneralComponents {
+	public static WebDriver Driver;
+	public GeneralComponents(WebDriver driver) {
+		Driver=driver;
+	}
+	public static WebDriver getCurrentDriver() {
+		return Driver;
+	}
 	
 	public static void open(String url) {
-		CreateDriver.Init().get(url);
+		getCurrentDriver().get(url);
 	}
 	public static void waitForSpecifiedTime(int seconds) {
 		try {
@@ -23,12 +30,13 @@ public class GeneralComponents {
 	}
 	
 	public static boolean waitForElement(String xpath,int time)  {
-		WebElement ele = CreateDriver.Init().findElement(By.xpath(xpath));
+		
+		WebElement ele = getCurrentDriver().findElement(By.xpath(xpath));
 		return waitForElement(ele, time) ;
 	}
 	
 	public static boolean waitForElement(By by,int time)  {
-		WebElement ele = CreateDriver.Init().findElement(by);
+		WebElement ele = getCurrentDriver().findElement(by);
 		return waitForElement(ele, time) ;
 	}
 	

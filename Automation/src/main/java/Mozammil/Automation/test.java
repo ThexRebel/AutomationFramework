@@ -8,35 +8,57 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import Mozammil.Automation.GeneralComponents.GeneralComponents;
 import reporting.Logger;
-import webDriver.CreateDriver;
+import webDriver.BaseTest;
 
-public class test {
-	GeneralComponents gc = new GeneralComponents();
+public class test extends BaseTest{
+	@Test
+	public void print() {
+		System.out.println("Hello!");
+		System.out.println("Testcase1 Thread ID: "+Thread.currentThread().getId());
+	}
 	
 	@Test(priority = 1)
 	public void Testcase1() {
+		try {
+		GeneralComponents gc1 = new GeneralComponents(getDriver());
+		 System.out.println("Testcase1 Thread ID: "+Thread.currentThread().getId());
 		Logger.startLogForTestCase("Testcase1");
-		gc.open("http://www.google.com");
+		gc1.open("http://www.google.com");
 		Logger.info(LogStatus.PASS, "Google opened");
-		CreateDriver.Init().findElement(By.className("gLFyf")).sendKeys("Selenium");
+		getDriver().findElement(By.className("gLFyf")).clear();
+		getDriver().findElement(By.className("gLFyf")).sendKeys("Selenium");
 		Logger.info(LogStatus.PASS, "Selenium entered");
-		CreateDriver.Init().findElement(By.name("btnK")).click();
+		getDriver().findElement(By.name("btnK")).click();
 		Logger.info(LogStatus.PASS, "Clicked on Search");
-		System.out.println(gc.waitForElement(By.className("SPZz6b"), 10));
+		System.out.println(gc1.waitForElement(By.className("B6fmyf"), 10));
 		Logger.info(LogStatus.PASS, "Validated");
+		 System.out.println("Testcase1 end Thread ID: "+Thread.currentThread().getId());
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	@Test(priority = 2)
 	public void Testcase2() {
-		Logger.startLogForTestCase("Tstcase2");
-		gc.open("http://www.google.com");
-		Logger.info(LogStatus.PASS, "2 Google opened");
-		CreateDriver.Init().findElement(By.className("gLFyf")).sendKeys("Selenium");
-		Logger.info(LogStatus.PASS, "2 Selenium entered");
-		CreateDriver.Init().findElement(By.name("btnK")).click();
-		Logger.info(LogStatus.PASS, "2 Clicked on Search");
-		System.out.println(gc.waitForElement(By.className("SPZz6b"), 10));
-		Logger.info(LogStatus.PASS, "2 Validated");
+		try {
+			GeneralComponents gc2 = new GeneralComponents(getDriver());
+			gc2.waitForSpecifiedTime(3);
+			System.out.println("Testcase2 Thread ID: "+Thread.currentThread().getId());
+			//Logger.startLogForTestCase("Tstcase2");
+			gc2.open("http://www.google.com");
+			getDriver().findElement(By.className("gLFyf")).clear();
+			//Logger.info(LogStatus.PASS, "2 Google opened");
+			getDriver().findElement(By.className("gLFyf")).sendKeys("Selenium");
+			//Logger.info(LogStatus.PASS, "2 Selenium entered");
+			getDriver().findElement(By.name("btnK")).click();
+			//Logger.info(LogStatus.PASS, "2 Clicked on Search");
+			System.out.println(gc2.waitForElement(By.className("B6fmyf"), 10));
+			//Logger.info(LogStatus.PASS, "2 Validated");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 }

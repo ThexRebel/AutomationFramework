@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="Sample Suite" verbose="1">
-<test name="Pre-requisites">
-		<classes>
-			<class name="reporting.Logger" />
-			<class name="webDriver.CreateDriver" />
-		</classes>
-	</test>
-	<test name="Testing">
+<suite name="Sample Suite" verbose="1" parallel = "tests" thread-count = "3">
+
+	<test name="Testing" >
+	<parameter name = "browser" value="chrome"/>
 		<classes>
 			<class name="Mozammil.Automation.test" />
+		</classes>
+	</test>
+	<test name="Testing2" >
+	<parameter name = "browser" value="chrome"/>
+		<classes>
 			<class name="Mozammil.Automation.test2" />
 		</classes>
 	</test>

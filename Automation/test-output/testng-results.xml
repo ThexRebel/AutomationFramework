@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-26T20:25:08 IST" name="Default suite" finished-at="2023-02-26T20:25:10 IST" duration-ms="1997">
+  <suite started-at="2023-02-27T22:56:38 IST" name="Sample Suite" finished-at="2023-02-27T22:56:48 IST" duration-ms="10721">
     <groups>
     </groups>
-    <test started-at="2023-02-26T20:25:08 IST" name="Default test" finished-at="2023-02-26T20:25:10 IST" duration-ms="1997">
-      <class name="apiAutomation.APIServices">
-        <test-method signature="restAPI()[pri:0, instance:apiAutomation.APIServices@3e84448c]" started-at="2023-02-26T20:25:08 IST" name="restAPI" finished-at="2023-02-26T20:25:10 IST" duration-ms="1964" status="FAIL">
-          <exception class="org.json.JSONException">
-            <message>
-              <![CDATA[JSONObject["support.url"] not found.]]>
-            </message>
+    <test started-at="2023-02-27T22:56:38 IST" name="Testing2" finished-at="2023-02-27T22:56:41 IST" duration-ms="3178">
+      <class name="Mozammil.Automation.test2">
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:Mozammil.Automation.test2@58695725]" started-at="2023-02-27T22:56:38 IST" name="Setup" finished-at="2023-02-27T22:56:41 IST" duration-ms="3029" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Testcase3()[pri:0, instance:Mozammil.Automation.test2@58695725]" started-at="2023-02-27T22:56:41 IST" name="Testcase3" finished-at="2023-02-27T22:56:41 IST" duration-ms="18" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.json.JSONException: JSONObject["support.url"] not found.
-at org.json.JSONObject.get(JSONObject.java:471)
-at apiAutomation.APIServices.getValueFromJson(APIServices.java:111)
-at apiAutomation.APIServices.restAPI(APIServices.java:31)
+              <![CDATA[java.lang.NullPointerException
+at reporting.Logger.startLogForTestCase(Logger.java:18)
+at Mozammil.Automation.test2.Testcase3(test2.java:18)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -33,25 +40,55 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 at org.testng.TestRunner.privateRun(TestRunner.java:764)
 at org.testng.TestRunner.run(TestRunner.java:585)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.json.JSONException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- restAPI -->
-      </class> <!-- apiAutomation.APIServices -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- Testcase3 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Mozammil.Automation.test2@58695725]" started-at="2023-02-27T22:56:41 IST" name="tearDown" finished-at="2023-02-27T22:56:41 IST" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Mozammil.Automation.test2 -->
+    </test> <!-- Testing2 -->
+    <test started-at="2023-02-27T22:56:38 IST" name="Testing" finished-at="2023-02-27T22:56:48 IST" duration-ms="10721">
+      <class name="Mozammil.Automation.test">
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:Mozammil.Automation.test@fa49800]" started-at="2023-02-27T22:56:38 IST" name="Setup" finished-at="2023-02-27T22:56:41 IST" duration-ms="3028" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="print()[pri:0, instance:Mozammil.Automation.test@fa49800]" started-at="2023-02-27T22:56:41 IST" name="print" finished-at="2023-02-27T22:56:41 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- print -->
+        <test-method signature="Testcase1()[pri:1, instance:Mozammil.Automation.test@fa49800]" started-at="2023-02-27T22:56:41 IST" name="Testcase1" finished-at="2023-02-27T22:56:41 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testcase1 -->
+        <test-method signature="Testcase2()[pri:2, instance:Mozammil.Automation.test@fa49800]" started-at="2023-02-27T22:56:41 IST" name="Testcase2" finished-at="2023-02-27T22:56:48 IST" duration-ms="7508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testcase2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Mozammil.Automation.test@fa49800]" started-at="2023-02-27T22:56:48 IST" name="tearDown" finished-at="2023-02-27T22:56:48 IST" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Mozammil.Automation.test -->
+    </test> <!-- Testing -->
+  </suite> <!-- Sample Suite -->
 </testng-results>

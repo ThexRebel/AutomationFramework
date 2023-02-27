@@ -8,6 +8,17 @@
           <include name="restAPI"/>
         </methods>
       </class> <!-- apiAutomation.APIServices -->
+      <class name="Mozammil.Automation.test">
+        <methods>
+          <include name="Testcase2"/>
+          <include name="Testcase1"/>
+        </methods>
+      </class> <!-- Mozammil.Automation.test -->
+      <class name="Mozammil.Automation.test2">
+        <methods>
+          <include name="Testcase3"/>
+        </methods>
+      </class> <!-- Mozammil.Automation.test2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
