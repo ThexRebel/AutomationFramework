@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
@@ -35,11 +36,13 @@ public class CreateDriver {
 	public static WebDriver createWebDriver(String browser) {
 		WebDriver driver=null;
 		if(browser.equalsIgnoreCase("chrome")){
-			//WebDriverManager.chromedriver().setup();
+			WebDriverManager.chromedriver().setup();
 		//	System.out.println(System.getProperty("user.dir"));
-			String path =System.getProperty("user.dir");
-			System.setProperty("webdriver.chrome.driver",path+"\\lib\\Driver\\chromedriver.exe");
-			driver = new ChromeDriver();
+			//String path =System.getProperty("user.dir");
+			//System.setProperty("webdriver.chrome.driver",path+"\\lib\\Driver\\chromedriver.exe");
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--remote-allow-origins=*");
+			driver = new ChromeDriver(options);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(30));
 			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
